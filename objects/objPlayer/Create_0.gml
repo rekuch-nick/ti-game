@@ -20,6 +20,13 @@ techYellow = 0;
 shotCD = 20;
 shotCDMax = 20;
 
+sideBuffer = 0;
+
+mBoost = 0;
+sHolding = 0;
+dHit = 0;
+twin = 0;
+
 for(var i=0; i<100; i++){
 	tech[i] = false;
 }

@@ -56,6 +56,10 @@ if(selected != noone){
 
 	if(pc.clickLeft){
 		pc.tech[selected.tech.num] = true;
+		if(selected.tech.col == ww.tRed){ pc.techRed ++; }
+		if(selected.tech.col == ww.tBlue){ pc.techBlue ++; }
+		if(selected.tech.col == ww.tGreen){ pc.techGreen ++; }
+		if(selected.tech.col == ww.tYellow){ pc.techYellow ++; }
 		
 		with(objTechChoice){ instance_destroy(); }
 		clearPlayerInput();

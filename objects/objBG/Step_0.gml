@@ -1,5 +1,5 @@
 if(instance_number(objScreen) > 0){ return; }
-y +=10;
+y += ww.scrollSpeed;
 
 if(y > 1000){ 
 	x = irandom_range(250, 950);

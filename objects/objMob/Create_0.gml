@@ -2,6 +2,7 @@
 
 moveSpeed = 6;
 
+sideBuffer = 40;
 
 thinkCD = 0;
 thinkCDMax = 60 * 3;
@@ -29,6 +30,7 @@ shotCDMax = 60 * 5;
 shotCDCluster = 45;
 shotCluster = 0;
 shotClusterMax = 0;
+triShot = false;
 
 
 coinMin = 0;

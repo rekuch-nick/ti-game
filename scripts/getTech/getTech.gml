@@ -19,7 +19,7 @@ function getTech(n){
 			nam: "Daxcive Animators",
 			col: ww.tGreen,
 			req: 1,
-			desc: "idk yet",
+			desc: "Defeated Fighters will serve you",
 			num: 1
 		}
 	}
@@ -111,7 +111,7 @@ function getTech(n){
 			nam: "Graviton Laser System",
 			col: ww.tYellow,
 			req: 1,
-			desc: "idk yet",
+			desc: "Your shots will pass through enemy Fighters",
 			num: 21
 		}
 	}
@@ -184,9 +184,15 @@ function getTech(n){
 		}
 	}
 	
-	
-	
-	
+	if(n == "Automated Defense Turrets" || n == 34){
+		return {
+			nam: "Automated Defense Turrets",
+			col: ww.tRed,
+			req: 1,
+			desc: "Obliterate nearby Fighters",
+			num: 34
+		}
+	}
 	
 	
 	

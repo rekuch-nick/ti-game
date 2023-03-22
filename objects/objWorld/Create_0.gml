@@ -15,8 +15,9 @@ maxMobs = 1;
 spawnCD = 30;
 spawnCDMax = 60;
 mobKind = objMob;
-		mobKind = objMobDestroyerIntro; //
+		//mobKind = objMobDestroyerIntro; //
 mobSpec = noone;
+		//mobSpec = objMobCruiser; //
 mobLast = objMobDestroyerIntro;
 mobTotal = 2;
 mobTotalMax = 2;
@@ -43,7 +44,7 @@ tGreen = 2;
 tYellow = 3;
 
 
-
+scrollSpeed = 2;
 
 
 

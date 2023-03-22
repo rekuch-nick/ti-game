@@ -2,7 +2,7 @@ draw_self();
 
 draw_set_alpha(.5);
 draw_sprite_stretched(col, 0, x+10, y+15, 100, 100);
-draw_sprite_stretched(col, 0, x+350, y+15, 100, 100);
+draw_sprite_stretched(col, 0, x+390, y+15, 100, 100);
 draw_sprite_stretched(col, 0, x+780, y+15, 100, 100);
 draw_set_alpha(1);
 

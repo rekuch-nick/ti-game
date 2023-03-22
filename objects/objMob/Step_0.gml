@@ -10,9 +10,19 @@ if(thinkCD < 1){
 		yt = irandom_range(30, room_height - 30);
 	}
 	
+	if(moveType == "random at"){
+		xt = pc.x + irandom_range(-100, 100);
+		yt = pc.y + irandom_range(-100, 100);
+	}
+	
 	if(moveType == "random mid"){
 		xt = irandom_range(130, room_width - 130);
 		yt = irandom_range(30, (room_height / 3) * 2);
+	}
+	
+	if(moveType == "random half"){
+		xt = irandom_range(130, room_width - 130);
+		yt = irandom_range(30, (room_height / 2));
 	}
 	
 	dis = point_distance(x, y, xt, yt)
@@ -56,6 +66,13 @@ if(hp < 1){
 	for(var i=0; i<explodeNum; i++){
 		effect_create_above(ef_explosion, other.x + irandom_range(-15, 15), other.y + irandom_range(-15, 15), random_range(.5, explodeSize), choose(c_orange, c_red, c_maroon));
 	}
+	
+	if(sprite_index == imgFighter || sprite_index == imgFighter2){
+		if(playerHasTech(getTech("Daxcive Animators").num)){ 
+			instance_create_depth(x, y, depth, objPlayerFighter);
+		}
+	}
+	
 	instance_destroy();
 	return;
 }
@@ -72,6 +89,13 @@ if(shotType != noone){
 	if(shotCD < 1){
 		shotCD = shotCDMax;
 		instance_create_depth(x, y, ww.layerEffect, shotType);
+		
+		if(triShot){
+			var s = instance_create_depth(x, y, ww.layerEffect, shotType);
+			s.xs -= 2;
+			s = instance_create_depth(x, y, ww.layerEffect, shotType);
+			s.xs += 2;
+		}
 		
 		if(shotCluster > 0){
 			shotCluster --;

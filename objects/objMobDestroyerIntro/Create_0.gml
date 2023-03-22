@@ -28,6 +28,6 @@ shotCDCluster = 30;
 shotCluster = 1;
 shotClusterMax = 1;
 
-coinMin = 50;
-coinMax = 50;
+coinMin = 10;
+coinMax = 15;
 coinZero = 0;
