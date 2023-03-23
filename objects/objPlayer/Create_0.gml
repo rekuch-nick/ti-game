@@ -4,13 +4,13 @@ depth = -4999;
 moveSpeed = 6;
 aniCD = 45;
 
-hp = 100;
-hpMax = 100;
+hp = 200;
+hpMax = 200;
 sp = 100;
 spMax = 100;
 
 coins = 0;
-coinsMax = 40;
+coinsMax = 16;
 
 techRed = 0;
 techBlue = 0;
@@ -21,6 +21,8 @@ shotCD = 20;
 shotCDMax = 20;
 
 sideBuffer = 0;
+frags = 0;
+fragTime = 0;
 
 mBoost = 0;
 sHolding = 0;

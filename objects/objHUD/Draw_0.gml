@@ -22,19 +22,36 @@ var x1 = 980 + (pc.coins / pc.coinsMax) * 110;
 draw_rectangle_color(980, 30, x1, 40, c_orange, c_yellow, c_yellow, c_orange, false);
 
 
+for(var i=0; i<3; i++){
+	var f = pc.frags > i ? 0 : 1;
+	var c = c_white;
+	if(pc.frags >= 3){ c = choose(c_red, c_aqua, c_lime); }
+	draw_sprite_stretched_ext(imgRelicFrag, f, 977 + i*40, 110, 36, 36, c, 1);
+}
+
 
 
 draw_sprite_stretched(imgTechGreen, 0, 980, 210, 40, 40);
-draw_text_transformed(1030, 210, pc.techGreen, 2, 2, 0);
-
 draw_sprite_stretched(imgTechBlue, 0, 980, 310, 40, 40);
-draw_text_transformed(1030, 310, pc.techBlue, 2, 2, 0);
-
 draw_sprite_stretched(imgTechYellow, 0, 980, 410, 40, 40);
-draw_text_transformed(1030, 410, pc.techYellow, 2, 2, 0);
-
 draw_sprite_stretched(imgTechRed, 0, 980, 510, 40, 40);
-draw_text_transformed(1030, 510, pc.techRed, 2, 2, 0);
+
+draw_text_transformed(1030, 210, pc.techGreen, 2, 2, 0);	
+	draw_text_transformed(1030, 310, pc.techBlue, 2, 2, 0);
+	draw_text_transformed(1030, 410, pc.techYellow, 2, 2, 0);
+	draw_text_transformed(1030, 510, pc.techRed, 2, 2, 0);
+	
+if(playerHasTech(getTech("Inheritance Systems").num)){
+	draw_text_transformed(1030, 210, "L", 2, 2, 0);	
+	draw_text_transformed(1030, 310, "1", 2, 2, 0);
+	draw_text_transformed(1030, 410, "Z", 2, 2, 0);
+	draw_text_transformed(1030, 510, "1", 2, 2, 0);
+	
+	draw_text_transformed(1030, 210, "#", 2, 2, 0);	
+	draw_text_transformed(1030, 310, "$", 2, 2, 0);
+	draw_text_transformed(1030, 410, "%", 2, 2, 0);
+	draw_text_transformed(1030, 510, "^", 2, 2, 0);
+}
 
 
 var modd = 47;

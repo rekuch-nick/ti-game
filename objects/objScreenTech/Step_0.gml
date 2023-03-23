@@ -11,8 +11,15 @@ if(image_alpha < 1){
 		prevRoll[3] = -1;
 		
 		for(var i=0; i<4; i++){
+			var tries = 0;
 			
 			do {
+				tries ++;
+				if(tries > 10000){
+					if(i == 0){ instance_destroy(); }
+					return;
+				}
+				
 				var r = irandom_range(0, 50);
 				var ok = true;
 				
@@ -24,10 +31,12 @@ if(image_alpha < 1){
 				
 				if(tec == noone){ ok = false; continue; }
 				if(playerHasTech(tec.num)){ ok = false; continue; }
-				if(tec.col == ww.tRed && tec.req > red){ ok = false; continue; }
-				if(tec.col == ww.tBlue && tec.req > blue){ ok = false; continue; }
-				if(tec.col == ww.tGreen && tec.req > green){ ok = false; continue; }
-				if(tec.col == ww.tYellow && tec.req > yellow){ ok = false; continue; }
+				if(!playerHasTech(getTech("Inheritance Systems").num)){
+					if(tec.col == ww.tRed && tec.req > red){ ok = false; continue; }
+					if(tec.col == ww.tBlue && tec.req > blue){ ok = false; continue; }
+					if(tec.col == ww.tGreen && tec.req > green){ ok = false; continue; }
+					if(tec.col == ww.tYellow && tec.req > yellow){ ok = false; continue; }
+				}
 				
 				
 			} until (ok);
@@ -60,6 +69,10 @@ if(selected != noone){
 		if(selected.tech.col == ww.tBlue){ pc.techBlue ++; }
 		if(selected.tech.col == ww.tGreen){ pc.techGreen ++; }
 		if(selected.tech.col == ww.tYellow){ pc.techYellow ++; }
+		
+		if(selected.tech.nam == "Magen Defense Grid"){ pc.spMax += 100; }
+		if(selected.tech.nam == "Duranium Armor"){ pc.hpMax += 200; pc.hp += 200; }
+		if(selected.tech.nam == "Aetherstream"){ room_speed = 90; }
 		
 		with(objTechChoice){ instance_destroy(); }
 		clearPlayerInput();

@@ -1,4 +1,4 @@
-image_alpha = random_range(.2, .5);
+if(instance_number(objScreen) > 0){ return; }
 image_alpha = .35;
 
 
@@ -14,7 +14,7 @@ if(thinkCD < 1){
 
 	
 	
-	dis = point_distance(x, y, xt, yt)
+	dis = point_distance(x, y, xt, yt);
 	var angle = arctan2(yt - y, xt - x);
 	xs = cos(angle) * moveSpeed;
 	ys = sin(angle) * moveSpeed;
@@ -22,3 +22,4 @@ if(thinkCD < 1){
 }
 
 moveObject(id, xs, ys);
+if(y < 30){ y ++; }

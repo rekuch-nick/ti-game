@@ -7,4 +7,4 @@ ys = 6;
 image_xscale = .8;
 image_yscale = .8;
 
-pow = 20;
+pow = 80;

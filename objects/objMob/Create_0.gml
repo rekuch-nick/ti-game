@@ -15,11 +15,12 @@ explodeNum = 5;
 explodeSize = 1.2;
 
 kamikaze = true;
-kamikazePower = 40;
+kamikazePower = 80;
 fat = 10;
 
 hp = 3;
 hpMax = 3;
+fragDmg = .06;
 
 dis = 0;
 disThink = false;
@@ -33,6 +34,6 @@ shotClusterMax = 0;
 triShot = false;
 
 
-coinMin = 0;
+coinMin = 1;
 coinMax = 1;
-coinZero = 100;
+coinZero = 0;

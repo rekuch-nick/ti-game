@@ -1,3 +1,4 @@
+if(instance_number(objScreen) > 0){ return; }
 if(point_distance(x, y, other.x, other.y) > 30 + other.fat){ return; }
 
 

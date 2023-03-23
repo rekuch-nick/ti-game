@@ -1,8 +1,8 @@
 pow = 1;
 
-if(playerHasTech(getTech("Plasma Scoring").num)){
-	pow += 1;
-}
+if(playerHasTech(getTech("Plasma Scoring").num)){ pow += 1; }
+if(playerHasTech(getTech("Hylar V Assault Laser").num)){ pow += 1; }
+if(playerHasTech(getTech("Assault Cannon").num)){ pow += 1; }
 
 if(pc.dHit > 0){ pow *= 2; }
 

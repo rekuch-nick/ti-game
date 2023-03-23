@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "objPlayerShot",
-  "spriteId": null,
+  "spriteId": {
+    "name": "imgPlayerShot",
+    "path": "sprites/imgPlayerShot/imgPlayerShot.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

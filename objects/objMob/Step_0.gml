@@ -35,8 +35,8 @@ if(thinkCD < 1){
 
 
 if(point_distance(x, y, xt, yt) >= moveSpeed){
-	if(xt > x){ image_xscale = 1; }
-	if(xt < x){ image_xscale = -1; }
+	if(xt > x && image_xscale < 0){ image_xscale *= -1; }
+	if(xt < x && image_xscale > 0){ image_xscale *= -1; }
 	
 	moveObject(id, xs, ys);
 	
@@ -51,7 +51,7 @@ if(stillNew){
 	if(y > 30){ stillNew = false; }
 }
 
-
+if(pc.frags >= 3){ hp -= fragDmg; }
 if(hp < 1){
 	var n = irandom_range(coinMin, coinMax);
 	if(irandom_range(0, 99) < coinZero){ n = 0; }

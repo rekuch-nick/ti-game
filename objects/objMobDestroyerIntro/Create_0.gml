@@ -29,5 +29,5 @@ shotCluster = 1;
 shotClusterMax = 1;
 
 coinMin = 10;
-coinMax = 15;
+coinMax = 10;
 coinZero = 0;

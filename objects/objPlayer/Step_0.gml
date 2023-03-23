@@ -1,7 +1,8 @@
 getPlayerInput();
 if(instance_number(objScreen) > 0){ return; }
 
-if(keyboard_check(vk_backspace)){ 
+if(keyboard_check_pressed(vk_backspace)){ 
+	coins = coinsMax;
 	instance_create_depth(x, y, depth, objPup);
 }
 
@@ -16,6 +17,7 @@ if(keyboard_check_pressed(vk_f1)){
 xs = 0; ys = 0;
 ms = moveSpeed;
 if(playerHasTech(getTech("Gravity Drive").num)){ ms += 2; }
+if(playerHasTech(getTech("Fleet Logistics").num)){ ms += 2; }
 
 var angle = arctan2(mouse_y - y, mouse_x - x);
 xs = cos(angle) * ms;
@@ -30,11 +32,18 @@ if(point_distance(x, y, mouse_x, mouse_y) >= ms){
 
 shotCD --;
 if(mBoost > 0){ shotCD -= 1; }
+if(playerHasTech(getTech("Hyper Metabolism").num)){ shotCD -= .5; }
 if(shotCD < 1){
 	shotCD = shotCDMax;
 	instance_create_depth(x, y-25, ww.layerEffect + 1, objPlayerShot);
 	
 	
+	if(playerHasTech(getTech("X-89 Bacterial Weapon").num)){ 
+		var s = instance_create_depth(x, y-25, ww.layerEffect + 1, objPlayerShot);
+		s.ys += 2; s.xs -= 2;
+		var s = instance_create_depth(x, y-25, ww.layerEffect + 1, objPlayerShot);
+		s.ys += 2; s.xs += 2;
+	}
 	
 	
 	for(var i=0; i<twin; i++){
@@ -69,11 +78,17 @@ if(sp < spMax){
 	}
 }
 
+if(playerHasTech(getTech("Self Assembly Routines").num)){ 
+	hp = clamp(hp + .01, 0, hpMax);
+}
+
 
 if(sHolding > 0){ sHolding --; }
 if(mBoost > 0){ mBoost --; }
 if(dHit > 0){ dHit --; }
-
+if(frags >= 3){ fragTime ++; }
+if(fragTime > 60 * 40){ fragTime = 0; frags = 0; }
+if(twin > 4){ twin = 4; }
 
 
 

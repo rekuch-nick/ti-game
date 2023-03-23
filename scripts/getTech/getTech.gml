@@ -28,8 +28,8 @@ function getTech(n){
 		return {
 			nam: "Hyper Metabolism",
 			col: ww.tGreen,
-			req: 2,
-			desc: "idk yet",
+			req: 3,
+			desc: "Your main weapon fires more quickly",
 			num: 2
 		}
 	}
@@ -38,9 +38,59 @@ function getTech(n){
 		return {
 			nam: "X-89 Bacterial Weapon",
 			col: ww.tGreen,
-			req: 3,
-			desc: "idk yet",
+			req: 5,
+			desc: "Works on ships too",
 			num: 3
+		}
+	}
+	
+	if(n == "Pre-Fab Arcologies" || n == 4){
+		return {
+			nam: "Pre-Fab Arcologies",
+			col: ww.tGreen,
+			req: 1,
+			desc: "Some TGs will appear each time you clear a Wave",
+			num: 4
+		}
+	}
+	
+	if(n == "Bio Stims" || n == 5){
+		return {
+			nam: "Bio Stims",
+			col: ww.tGreen,
+			req: 2,
+			desc: "Action Card buffs will last twice as long",
+			num: 5
+		}
+	}
+	
+	if(n == "Neuroglaive" || n == 6){
+		return {
+			nam: "Neuroglaive",
+			col: ww.tGreen,
+			req: 3,
+			desc: "some attack idk, prolly on all new foes",
+			num: 6
+		}
+	}
+	
+	if(n == "Instinct Training" || n == 7){
+		return {
+			nam: "Instinct Training",
+			col: ww.tGreen,
+			req: 4,
+			desc: "prevent some bad thing",
+			num: 7
+		}
+	}
+	
+	if(n == "Mageon Implants" || n == 8){
+		return {
+			nam: "Mageon Implants",
+			col: ww.tGreen,
+			req: 4,
+			desc: "Draw even more Action Cards",
+			num: 8
 		}
 	}
 	
@@ -50,23 +100,23 @@ function getTech(n){
 	/////   BLUE  ///////////////////////////////////////////////////////////////////////////////
 	//////////////////////////////////////////////////////////////////////////////////////////////
 	
-	if(n == "Gravity Drive" || n == 10){
-		return {
-			nam: "Gravity Drive",
-			col: ww.tBlue,
-			req: 0,
-			desc: "Move a little faster",
-			num: 10
-		}
-	}
-	
 	if(n == "Antimass Deflectors" || n == 11){
 		return {
 			nam: "Antimass Deflectors",
 			col: ww.tBlue,
 			req: 1,
-			desc: "idk yet",
+			desc: "Touching an Asteroid destroies it",
 			num: 11
+		}
+	}
+	
+	if(n == "Gravity Drive" || n == 10){
+		return {
+			nam: "Gravity Drive",
+			col: ww.tBlue,
+			req: 1,
+			desc: "Move a little faster",
+			num: 10
 		}
 	}
 	
@@ -74,8 +124,8 @@ function getTech(n){
 		return {
 			nam: "Fleet Logistics",
 			col: ww.tBlue,
-			req: 2,
-			desc: "idk yet",
+			req: 4,
+			desc: "Move a little faster",
 			num: 12
 		}
 	}
@@ -84,9 +134,59 @@ function getTech(n){
 		return {
 			nam: "Light/Wave Deflector",
 			col: ww.tBlue,
-			req: 3,
-			desc: "idk yet",
+			req: 5,
+			desc: "Pass safely through enemy shots sometimes",
 			num: 13
+		}
+	}
+	
+	if(n == "Dark Energy Tap" || n == 14){
+		return {
+			nam: "Dark Energy Tap",
+			col: ww.tBlue,
+			req: 0,
+			desc: "You can collect Frontier Tokens",
+			num: 14
+		}
+	}
+	
+	if(n == "Sling Relay" || n == 15){
+		return {
+			nam: "Sling Relay",
+			col: ww.tBlue,
+			req: 2,
+			desc: "Some attack, idk",
+			num: 15
+		}
+	}
+	
+	if(n == "Maneuvering Jets" || n == 16){
+		return {
+			nam: "Maneuvering Jets",
+			col: ww.tBlue,
+			req: 2,
+			desc: "Move with such precision that TGs are easy to collect",
+			num: 16
+		}
+	}
+	
+	if(n == "Aetherstream" || n == 17){
+		return {
+			nam: "Aetherstream",
+			col: ww.tBlue,
+			req: 3,
+			desc: "Speed up the game- Speed Runner's BFF",
+			num: 17
+		}
+	}
+	
+	if(n == "Chaos Mapping" || n == 18){
+		return {
+			nam: "Chaos Mapping",
+			col: ww.tBlue,
+			req: 4,
+			desc: "Produce a Ghost Ship every so often",
+			num: 18
 		}
 	}
 	
@@ -111,7 +211,7 @@ function getTech(n){
 			nam: "Graviton Laser System",
 			col: ww.tYellow,
 			req: 1,
-			desc: "Your shots will pass through enemy Fighters",
+			desc: "Your shots can pierce through one enemy Fighter",
 			num: 21
 		}
 	}
@@ -121,7 +221,7 @@ function getTech(n){
 			nam: "Transit Diodes",
 			col: ww.tYellow,
 			req: 2,
-			desc: "idk yet",
+			desc: "Produce some Fighters each time you clear a Wave",
 			num: 22
 		}
 	}
@@ -130,11 +230,62 @@ function getTech(n){
 		return {
 			nam: "Integrated Economy",
 			col: ww.tYellow,
-			req: 3,
-			desc: "idk yet",
+			req: 4,
+			desc: "Build a free Ghost Ship at the end of each Wave",
 			num: 23
 		}
 	}
+	
+	if(n == "Scanlink Drone Network" || n == 24){
+		return {
+			nam: "Scanlink Drone Network",
+			col: ww.tYellow,
+			req: 1,
+			desc: "Find Relic Fragments more often",
+			num: 24
+		}
+	}
+	
+	if(n == "Predictive Intelligence" || n == 25){
+		return {
+			nam: "Predictive Intelligence",
+			col: ww.tYellow,
+			req: 2,
+			desc: "Fire shots that hone in on foes",
+			num: 25
+		}
+	}
+	
+	if(n == "E-Res Siphons" || n == 26){
+		return {
+			nam: "E-Res Siphons",
+			col: ww.tYellow,
+			req: 3,
+			desc: "Gain TGs when your hull (not shield) is damaged",
+			num: 26
+		}
+	}
+	
+	if(n == "Inheritance Systems" || n == 27){
+		return {
+			nam: "Inheritance Systems",
+			col: ww.tYellow,
+			req: 4,
+			desc: "Ignore all technology pre-reqs",
+			num: 27
+		}
+	}
+	
+	if(n == "Mirror Computing" || n == 28){
+		return {
+			nam: "Mirror Computing",
+			col: ww.tYellow,
+			req: 5,
+			desc: "Trade Goods are worth double",
+			num: 28
+		}
+	}
+	
 	
 	
 	
@@ -159,7 +310,7 @@ function getTech(n){
 			nam: "Magen Defense Grid",
 			col: ww.tRed,
 			req: 1,
-			desc: "idk yet",
+			desc: "Double your max shield power",
 			num: 31
 		}
 	}
@@ -168,8 +319,8 @@ function getTech(n){
 		return {
 			nam: "Duranium Armor",
 			col: ww.tRed,
-			req: 2,
-			desc: "idk yet",
+			req: 3,
+			desc: "Double your hull points",
 			num: 32
 		}
 	}
@@ -178,8 +329,8 @@ function getTech(n){
 		return {
 			nam: "Assault Cannon",
 			col: ww.tRed,
-			req: 3,
-			desc: "idk yet",
+			req: 4,
+			desc: "Your shots do more damage",
 			num: 33
 		}
 	}
@@ -188,9 +339,49 @@ function getTech(n){
 		return {
 			nam: "Automated Defense Turrets",
 			col: ww.tRed,
-			req: 1,
+			req: 2,
 			desc: "Obliterate nearby Fighters",
 			num: 34
+		}
+	}
+	
+	if(n == "Hylar V Assault Laser" || n == 35){
+		return {
+			nam: "Hylar V Assault Laser",
+			col: ww.tRed,
+			req: 1,
+			desc: "Your shots do more damage",
+			num: 35
+		}
+	}
+	
+	if(n == "Deep Space Cannon" || n == 36){
+		return {
+			nam: "Deep Space Cannon",
+			col: ww.tRed,
+			req: 2,
+			desc: "Your shots do more damage",
+			num: 36
+		}
+	}
+	
+	if(n == "Self Assembly Routines" || n == 37){
+		return {
+			nam: "Self Assembly Routines",
+			col: ww.tRed,
+			req: 3,
+			desc: "Hull repairs over time",
+			num: 37
+		}
+	}
+	
+	if(n == "Valkyrie Particle Weave" || n == 38){
+		return {
+			nam: "Valkyrie Particle Weave",
+			col: ww.tRed,
+			req: 5,
+			desc: "Taking hull damage fires a powerful attack",
+			num: 38
 		}
 	}
 	

@@ -1,0 +1,82 @@
+a	0 Neural Motivator				+ACs
+a	1 Daxcive Animators				enslave fighters
+T	1 Pre-Fab Arcologies			spawn some TGs each wave
+a	2 Bio Stims						ACs last 2x as long
+A	3 Hyper Metabolism				ATTACK SPEED
+A	3 Neuroglaive					*some cool shot on entry
+d	4 Instinct Training				*prevent some event
+a	4 Mageon Implants				+ACs
+A	5 X-89 Bacterial Weapon			more shots in a spread
+
+	0 Dark Energy Tap				collectable frontier tokens will spawn
+d	1 Antimass Deflectors			break rocks on impact
+D	1 Gravity Drive					move faster
+A	2	Sling Relay					*some attack
+T	2 Maneuvering Jets				pull in TGs
+	3 Aetherstream					everything moves faster (speedrun mode)
+D	4 Fleet Logistics				move faster
+A	4 Chaos Mapping					*gain ghost ships every so often
+D	5 Light/Wave Deflector			*move through shots every so often
+
+A	0 Plasma Scoring				more dmg	
+A	1 Hylar V Assault Laser			more dmg
+D	1 Magen Defense Grid			more total shields
+A	2 Automated Defense Turrets		auto shoot fighters
+A	2 Deep Space Cannon				shot power
+D	3 Self Assembly Routines		hp over time
+D	3 Duranium Armor				max hp
+A	4 Assault Cannon				shot power
+A	5 Valkyrie Particle Weave		damage attacker
+
+T	0 Sarween Tools					foes drop more TG
+t	1 Scanlink Drone Network		* more relic fragments will spawn
+A	1 Graviton Laser System			shots pierce fighters
+A	2 Predictive Intelligence		homing shots
+a	2 Transit Diodes				spawn fighters each wave
+T	3 E-Res Siphons					gain TGs when damaged
+A	4 Integrated Economy			gain ghost ship each wave
+T	4 Inheritance Systems			ignore all pre-reqs
+T	5 Mirror Computing				double TGs
+
+
+
+The Arborec 2.1.1	Bioplasmosis
+The Emirates of Hacan 2.2.1	Production Biomes
+The Yin Brotherhood 2.5.1	Yin Spinner
+The Yssaril Tribes 2.6.1	Transparasteel Plating 2.6.2	
+					
+The Empyrea 3.3.1	Voidwatch
+The Mahact Gene-Sorcerers 3.4.1	Genetic Recombination
+The Naaz-Rokha Alliance 3.5.1	Pre-Fab Arcologies
+
+The Ghosts of Creuss 2.2.1	Wormhole Generator
+The Universities of Jol-Nar 2.3.1	Spacial Conduit Cylinder
+The Winnu 2.4.1	Lazax Gate Folding
+
+The Barony of Letnev 2.1.1	L4 Disruptors
+The Emirates of Hacan 2.2.1	Quantum Datahub Node
+The Mentak Coalition 2.4.1	Salvage Operations
+The Winnu 2.6.1	Hegemonic Trade Policy
+
+The Xxcha Kingdom 2.7.1	Nullification Field
+The Yin Brotherhood 2.8.1	Impulse Core
+
+The Nomad 3.3.1	Temporal Command Suite
+The Argent Flight 3.4.1	Aerie Hololattice
+The Council Keleres 4.1.1	I.I.H.Q Modernization 4.1.2	Agency Supply Network
+
+The Barony of Letnev 2.1.1	Non-Euclidian Shielding
+The Embers of Muaat 2.2.1	Magmus Reactor
+The Ghosts of Creuss 2.3.1	Dimensional Splicer
+The Naaz-Rokha Alliance 3.3.1	Supercharge
+The Vuil'Raith Cabal 3.4.1	Vortex
+
+Psychoarchaeology				
+AIDA
+
+
+
+
+
+
+
