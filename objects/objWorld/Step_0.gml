@@ -49,7 +49,7 @@ if(instance_number(objMob) == 0 && mIndex >= array_length(mobs) ){
 	if(playerHasTech(getTech("Integrated Economy").num)){ pc.twin ++; }
 	
 	if(playerHasTech(getTech("Pre-Fab Arcologies").num)){ 
-		for(var i=0; i<ceil(stage / 1.5); i++){
+		for(var i=0; i<ceil(stage); i++){
 			instance_create_depth(irandom_range(200, 900), 0, ww.layerMob + 100, objPup);
 		}
 	}

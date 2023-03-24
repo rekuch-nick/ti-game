@@ -29,6 +29,8 @@ sHolding = 0;
 dHit = 0;
 twin = 0;
 
+gameOverTime = 0;
+
 for(var i=0; i<100; i++){
 	tech[i] = false;
 }

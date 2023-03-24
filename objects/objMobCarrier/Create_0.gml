@@ -1,6 +1,6 @@
 event_inherited();
-image_xscale = 2;
-image_yscale = 2;
+image_xscale = 1.5;
+image_yscale = 1.5;
 
 
 moveSpeed = 2;
@@ -25,7 +25,7 @@ coinZero = 0;
 
 
 shotType = objMob;
-shotCD = 60 * 5;
+shotCD = 60 * 3;
 shotCDMax = 60 * 10;
 shotCDCluster = 30;
 shotCluster = 3;

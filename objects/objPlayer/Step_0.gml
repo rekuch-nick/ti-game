@@ -1,6 +1,25 @@
 getPlayerInput();
 if(instance_number(objScreen) > 0){ return; }
 
+if(hp < 1){
+	gameOverTime = 60 * 5;
+	hp = hpMax;
+	image_alpha = 0;
+}
+
+if(gameOverTime > 0){
+	effect_create_above(ef_explosion, irandom_range(0, 1100), irandom_range(0, 700), choose(1, 2, 3), choose(c_orange, c_red, c_maroon, c_black) );
+	effect_create_above(ef_explosion, irandom_range(0, 1100), irandom_range(0, 700), choose(1, 2, 3), choose(c_orange, c_red, c_maroon, c_black) );
+	gameOverTime --;
+	if(gameOverTime <= 0){
+		gameOverTime = 0;
+		image_alpha = 1;
+		sp = spMax;
+		instance_create_depth(0, 0, ww.layerScreen, objScreenGameOver);
+	}
+	return;
+}
+
 if(keyboard_check_pressed(vk_backspace)){ 
 	coins = coinsMax;
 	instance_create_depth(x, y, depth, objPup);
