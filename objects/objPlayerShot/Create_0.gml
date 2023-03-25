@@ -15,3 +15,6 @@ range = 400;
 if(playerHasTech(getTech("Deep Space Cannon").num)){ range += 800; }
 
 hasHitFighter = false;
+
+hone = false;
+honeCD = 0;

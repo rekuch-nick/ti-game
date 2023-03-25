@@ -20,6 +20,9 @@ techYellow = 0;
 shotCD = 20;
 shotCDMax = 20;
 
+honeShotCD = 70;
+honeShotCDMax = 70;
+
 sideBuffer = 0;
 frags = 0;
 fragTime = 0;

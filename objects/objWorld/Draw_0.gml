@@ -61,7 +61,7 @@ if(stage == 16){
 	draw_text_transformed(140, 50, "implied promise 'This is how we know we", 2, 2, 0);
 	draw_text_transformed(140, 90, "can work together' that is the implied ", 2, 2, 0);
 	draw_text_transformed(140, 130, "threat 'You won't get any deals from me", 2, 2, 0);
-	draw_text_transformed(140, 170, "every unless you fund my hughly optimistic", 2, 2, 0);
+	draw_text_transformed(140, 170, "ever unless you fund my hughly optimistic", 2, 2, 0);
 	draw_text_transformed(140, 210, "tech plan RIGHT NOW YA BOZO'", 2, 2, 0);
 
 }
@@ -111,7 +111,7 @@ if(stage == 28){
 	draw_text_transformed(140, 130, "for free from fanitical flippers.", 2, 2, 0);
 	draw_text_transformed(140, 170, "Fictional friends, festering fiendishly,", 2, 2, 0);
 	draw_text_transformed(140, 210, "fracture formal foundations for fickle", 2, 2, 0);
-	draw_text_transformed(140, 170, "fractions from former FANTASY!'", 2, 2, 0);
+	draw_text_transformed(140, 250, "fractions from former FANTASY!'", 2, 2, 0);
 }
 
 if(stage == 30){

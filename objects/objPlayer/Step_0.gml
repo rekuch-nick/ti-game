@@ -96,6 +96,17 @@ if(shotCD < 1){
 }
 
 
+if(playerHasTech(getTech("Predictive Intelligence").num)){ 
+	honeShotCD --; if(honeShotCD < 1){
+		honeShotCD = honeShotCDMax;
+		var s = instance_create_depth(x, y-25, ww.layerEffect + 1, objPlayerShot);
+		s.hone = true;
+		s.pow *= 2;
+		s.range = 1200;
+	}
+}
+
+
 if(sp < spMax){
 	sp = clamp(sp + .02, 0, spMax);
 	if(sHolding > 0){

@@ -213,7 +213,7 @@ function getTech(n){
 			nam: "Graviton Laser System",
 			col: ww.tYellow,
 			req: 1,
-			desc: "Your shots can pierce through one enemy Fighter",
+			desc: "Your shots arc through enemy Fighters into larger ships",
 			num: 21
 		}
 	}

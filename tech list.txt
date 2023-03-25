@@ -16,22 +16,22 @@ T	2 Maneuvering Jets				pull in TGs
 	3 Aetherstream					everything moves faster (speedrun mode)
 D	4 Fleet Logistics				move faster
 A	4 Chaos Mapping					*gain ghost ships every so often
-D	5 Light/Wave Deflector			*move through shots every so often
+D	5 Light/Wave Deflector			move through shots every so often
 
 A	0 Plasma Scoring				more dmg	
 A	1 Hylar V Assault Laser			more dmg
 D	1 Magen Defense Grid			more total shields
 A	2 Automated Defense Turrets		auto shoot fighters
-A	2 Deep Space Cannon				shot power
+A	2 Deep Space Cannon				shot range
 D	3 Self Assembly Routines		hp over time
 D	3 Duranium Armor				max hp
 A	4 Assault Cannon				shot power
 A	5 Valkyrie Particle Weave		damage attacker
 
 T	0 Sarween Tools					foes drop more TG
-t	1 Scanlink Drone Network		* more relic fragments will spawn
+t	1 Scanlink Drone Network		more relic fragments will spawn
 A	1 Graviton Laser System			shots pierce fighters
-A	2 Predictive Intelligence		homing shots
+A	2 Predictive Intelligence		* homing shots
 a	2 Transit Diodes				spawn fighters each wave
 T	3 E-Res Siphons					gain TGs when damaged
 A	4 Integrated Economy			gain ghost ship each wave
