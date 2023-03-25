@@ -1,3 +1,7 @@
+if(frags >= 3){
+	var c = choose(c_white, c_aqua, c_lime, c_yellow);
+	draw_circle_color(x, y, irandom_range(20, 50), c, c, false);
+}
 draw_self();
 
 

@@ -8,9 +8,10 @@ var rad = 4;
 if(pc.dHit > 0){ rad = 6; }
 draw_circle_color(x, y, rad, c1, c2, false);
 
-if(pow > 1){ draw_circle_color(x, y, rad + 3, c1, c2, true); }
-if(pow > 2){ draw_circle_color(x, y, rad + 5, c1, c2, true); }
-if(pow > 3){ draw_circle_color(x, y, rad + 7, c1, c2, true); }
-if(pow > 4){ draw_circle_color(x, y, rad + 9, c1, c2, true); }
+var dhm = pc.dHit > 0 ? baseP : 0;
+if(pow > baseP+dhm){ draw_circle_color(x, y, rad + 3, c1, c2, true); }
+if(pow > baseP+dhm+1){ draw_circle_color(x, y, rad + 5, c1, c2, true); }
+if(pow > baseP+dhm+2){ draw_circle_color(x, y, rad + 7, c1, c2, true); }
+if(pow > baseP+dhm+3){ draw_circle_color(x, y, rad + 9, c1, c2, true); }
 
 

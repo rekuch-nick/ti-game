@@ -13,8 +13,8 @@ explodeSize = 1.2;
 kamikaze = true;
 fat = 10;
 
-hp = 6;
-hpMax = 6;
+hp = 10;
+hpMax = 10;
 
 
 coinMin = 1;

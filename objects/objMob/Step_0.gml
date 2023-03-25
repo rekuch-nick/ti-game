@@ -88,7 +88,11 @@ if(shotType != noone){
 	shotCD --;
 	if(shotCD < 1){
 		shotCD = shotCDMax;
-		instance_create_depth(x, y, ww.layerEffect, shotType);
+		var s = instance_create_depth(x, y, ww.layerEffect, shotType);
+		if(irandom_range(0, 99) < shotAngleChance){
+			if(pc.x + 50 < x){ s.xs = -3; }
+			if(pc.x - 50 > x){ s.xs = 3; }
+		}
 		
 		if(triShot){
 			var s = instance_create_depth(x, y, ww.layerEffect, shotType);

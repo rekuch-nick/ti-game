@@ -101,13 +101,15 @@ function getTech(n){
 	//////////////////////////////////////////////////////////////////////////////////////////////
 	
 	if(n == "Antimass Deflectors" || n == 11){
-		return {
+		var tt = {
 			nam: "Antimass Deflectors",
 			col: ww.tBlue,
 			req: 1,
 			desc: "Touching an Asteroid destroies it",
 			num: 11
-		}
+		};
+		if(ww.stage > 5){ tt.req = 0; }
+		return tt;
 	}
 	
 	if(n == "Gravity Drive" || n == 10){
@@ -360,7 +362,7 @@ function getTech(n){
 			nam: "Deep Space Cannon",
 			col: ww.tRed,
 			req: 2,
-			desc: "Your shots do more damage",
+			desc: "Your shots have long range",
 			num: 36
 		}
 	}
@@ -380,7 +382,7 @@ function getTech(n){
 			nam: "Valkyrie Particle Weave",
 			col: ww.tRed,
 			req: 5,
-			desc: "Taking hull damage fires a powerful attack",
+			desc: "Taking any damage fires a powerful attack",
 			num: 38
 		}
 	}

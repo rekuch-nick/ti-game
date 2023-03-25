@@ -18,8 +18,8 @@ kamikaze = true;
 kamikazePower = 80;
 fat = 10;
 
-hp = 3;
-hpMax = 3;
+hp = 6;
+hpMax = 6;
 fragDmg = .06;
 
 dis = 0;
@@ -32,6 +32,7 @@ shotCDCluster = 45;
 shotCluster = 0;
 shotClusterMax = 0;
 triShot = false;
+shotAngleChance = 0;
 
 
 coinMin = 1;

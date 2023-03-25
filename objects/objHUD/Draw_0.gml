@@ -8,11 +8,16 @@ draw_rectangle_color(10, 490, 120, 690, c_black, c_black, c_black, c_black, fals
 var y1 = 490 + 200 - ((pc.hp / pc.hpMax) * 200);
 draw_rectangle_color(30, y1, 100, 690, c_maroon, c_maroon, c_red, c_red, false);
 
+draw_text_color(92, y1, floor(pc.hp), c_red, c_red, c_red, c_red, 1);
+
+
 var y2 = 490 + 200 - ((pc.sp / pc.spMax) * 200);
 draw_set_alpha(.5);
 draw_rectangle_color(10, y2, 120, 690, c_blue, c_blue, c_aqua, c_aqua, false);
 draw_set_alpha(1);
 
+
+draw_text_color(10, y2, floor(pc.sp), c_aqua, c_aqua, c_aqua, c_aqua, 1);
 
 //draw_text_transformed(970, 10, "$" + string(pc.coins), 2, 2, 0);
 draw_sprite_stretched(imgTradegood, 0, 980, 10, 100, 100);

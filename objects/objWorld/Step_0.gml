@@ -20,10 +20,19 @@ if(rockRate > 0 && irandom_range(1, rockRate) == 1){
 
 actionCardCD --;
 if(playerHasTech(getTech("Neural Motivator").num)){ actionCardCD -= .5; }
+if(playerHasTech(getTech("Mageon Implants").num)){ actionCardCD -= .5; }
 if(actionCardCD < 1){
 	actionCardCD = actionCardCDMax;
 	var s = instance_create_depth(irandom_range(200, room_width - 200), 0, ww.layerMob + 100, objPup);
 	s.sprite_index = imgActionCard;
+}
+
+shardCD --;
+if(playerHasTech(getTech("Scanlink Drone Network").num)){ shardCD -= .5; }
+if(shardCD < 1){
+	shardCD = shardCDMax;
+	var s = instance_create_depth(irandom_range(200, room_width - 200), 0, ww.layerMob + 100, objPup);
+	s.sprite_index = imgRelicFrag;
 }
 
 

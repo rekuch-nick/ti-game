@@ -2,7 +2,7 @@ getPlayerInput();
 if(instance_number(objScreen) > 0){ return; }
 
 if(hp < 1){
-	gameOverTime = 60 * 5;
+	gameOverTime = 60 * 4;
 	hp = hpMax;
 	image_alpha = 0;
 }
@@ -30,7 +30,13 @@ if(keyboard_check_pressed(vk_f1)){
 	s.sprite_index = imgActionCard;
 }
 
+if(keyboard_check_pressed(vk_f2)){ 
+	hp = 0;
+}
 
+if(keyboard_check_pressed(vk_f3)){ 
+	ww.mobs = [];
+}
 
 
 xs = 0; ys = 0;
@@ -106,7 +112,7 @@ if(sHolding > 0){ sHolding --; }
 if(mBoost > 0){ mBoost --; }
 if(dHit > 0){ dHit --; }
 if(frags >= 3){ fragTime ++; }
-if(fragTime > 60 * 40){ fragTime = 0; frags = 0; }
+if(fragTime > 60 * 20){ fragTime = 0; frags = 0; }
 if(twin > 4){ twin = 4; }
 
 

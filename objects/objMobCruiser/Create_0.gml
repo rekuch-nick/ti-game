@@ -14,8 +14,8 @@ explodeSize = 1.7;
 kamikaze = false;
 fat = 30;
 
-hp = 15;
-hpMax = 15;
+hp = 20;
+hpMax = 20;
 
 
 coinMin = 2;

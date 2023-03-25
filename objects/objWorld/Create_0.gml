@@ -28,8 +28,11 @@ bg2.sprite_index = imgTile24;
 actionCardCDMax = 60 * 60 * 2;
 actionCardCD = actionCardCDMax;
 
-frontTokenCDMax = 60 * 105;
-frontTokenCD = frontTokenCDMax;
+frontTokenCDMax = 60 * 150;
+frontTokenCD = 20;
+
+shardCDMax = 60 * 70;
+shardCD = shardCDMax * 2;
 
 
 

@@ -2,7 +2,7 @@ if(instance_number(objScreen) > 0){ return; }
 
 y += ys;
 x += xs;
-
+range -= abs(ys);
 
 if(y < -10){ instance_destroy(); }
 
@@ -35,3 +35,7 @@ if(hit != noone){
 		instance_destroy();
 	}
 }
+
+
+
+if(range < 0){ instance_destroy(); }
