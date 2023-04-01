@@ -16,6 +16,14 @@ function hurtPlayer(dmg, note){
 				}
 			}
 		}
+		
+		
+		if(playerHasTech(getTech("E-Res Siphons").num)){ 
+			s = instance_create_depth(x - 100, y - 100, ww.layerMob + 100, objPup);
+			s = instance_create_depth(x - 100, y + 100, ww.layerMob + 100, objPup);
+			s = instance_create_depth(x + 100, y - 100, ww.layerMob + 100, objPup);
+			s = instance_create_depth(x + 100, y + 100, ww.layerMob + 100, objPup);
+		}
 	}
 	
 	
@@ -30,16 +38,7 @@ function hurtPlayer(dmg, note){
 	}
 	
 	
-	if(dmg > 0){		
-		if(playerHasTech(getTech("E-Res Siphons").num)){ 
-			s = instance_create_depth(x - 100, y - 100, ww.layerMob + 100, objPup);
-			s = instance_create_depth(x - 100, y + 100, ww.layerMob + 100, objPup);
-			s = instance_create_depth(x + 100, y - 100, ww.layerMob + 100, objPup);
-			s = instance_create_depth(x + 100, y + 100, ww.layerMob + 100, objPup);
-		}
-		
-	}
-	
+
 	
 	
 	pc.hp -= dmg;

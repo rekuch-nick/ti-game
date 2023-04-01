@@ -15,6 +15,7 @@ if(gameOverTime > 0){
 		gameOverTime = 0;
 		image_alpha = 1;
 		sp = spMax;
+		hp = hpMax;
 		instance_create_depth(0, 0, ww.layerScreen, objScreenGameOver);
 	}
 	return;
@@ -125,6 +126,7 @@ if(dHit > 0){ dHit --; }
 if(frags >= 3){ fragTime ++; }
 if(fragTime > 60 * 20){ fragTime = 0; frags = 0; }
 if(twin > 4){ twin = 4; }
+if(twin > 2 && !playerHasTech(getTech("Chaos Mapping").num)){ twin = 2; }
 
 
 

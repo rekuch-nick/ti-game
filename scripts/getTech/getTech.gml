@@ -187,7 +187,7 @@ function getTech(n){
 			nam: "Chaos Mapping",
 			col: ww.tBlue,
 			req: 4,
-			desc: "Produce a Ghost Ship every so often",
+			desc: "Increase the max limit of Ghost Ships to four",
 			num: 18
 		}
 	}
@@ -263,7 +263,7 @@ function getTech(n){
 			nam: "E-Res Siphons",
 			col: ww.tYellow,
 			req: 3,
-			desc: "Gain TGs when your hull (not shield) is damaged",
+			desc: "Gain TGs when you are damaged",
 			num: 26
 		}
 	}

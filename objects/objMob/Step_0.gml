@@ -25,6 +25,8 @@ if(thinkCD < 1){
 		yt = irandom_range(30, (room_height / 2));
 	}
 	
+	if(speedSwap){ moveSpeed = choose(1, 2, 3, 4, 5, 6); }
+	
 	dis = point_distance(x, y, xt, yt)
 	var angle = arctan2(yt - y, xt - x);
 	xs = cos(angle) * moveSpeed;
@@ -48,7 +50,13 @@ if(point_distance(x, y, xt, yt) >= moveSpeed){
 
 if(stillNew){
 	y ++;
-	if(y > 30){ stillNew = false; }
+	if(boxIn){
+		if(x <= 130 + boxInSize){ x ++; }
+		else if(x >= room_width - 130 - boxInSize){ x --; }
+		else if(y >= 30 + boxInSize){ stillNew = false; }
+	} else {
+		if(y > 30){ stillNew = false; }
+	}
 }
 
 if(pc.frags >= 3){ hp -= fragDmg; }
@@ -92,6 +100,13 @@ if(shotType != noone){
 		if(irandom_range(0, 99) < shotAngleChance){
 			if(pc.x + 50 < x){ s.xs = -3; }
 			if(pc.x - 50 > x){ s.xs = 3; }
+		}
+		
+		if(randomAim){
+			s.xs = irandom_range(0, 10);
+			s.ys = 10 - s.xs;
+			s.xs = choose(s.xs, -s.xs);
+			s.ys = choose(s.ys, -s.ys);
 		}
 		
 		if(triShot){

@@ -9,10 +9,10 @@ if(pc.clickLeft){
 	if(cp != noone){
 		
 		if(cp.txt == r1){
-			ww.stage = clamp(ww.stage - 1, 1, ww.stage);
+			// ww.stage = clamp(ww.stage - 1, 1, ww.stage);
 		}
 		if(cp.txt == r2){
-			ww.stage = clamp(ww.stage - 4, 1, ww.stage);
+			ww.stage = clamp(ww.stage - 3, 1, ww.stage);
 		}
 		
 		with(objMob){ instance_destroy(); }

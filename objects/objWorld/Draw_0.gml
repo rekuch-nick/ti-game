@@ -91,8 +91,10 @@ if(stage == 22){
 if(stage == 24){
 	draw_text_transformed(140, 10, "'Why doesn't that homeless ", 2, 2, 0);
 	draw_text_transformed(140, 50, "person just buy a house, Mommy?'", 2, 2, 0);
-	draw_text_transformed(140, 90, "This is a question asked by every", 2, 2, 0);
-	draw_text_transformed(140, 130, "true R1 X - 1 debt meta demander.", 2, 2, 0);
+	draw_text_transformed(140, 90, "This is a question asked by many", 2, 2, 0);
+	draw_text_transformed(140, 130, "R1 X - 1 debt meta demanders.", 2, 2, 0);
+	draw_text_transformed(140, 170, "They also sometimes say, 'Let them", 2, 2, 0);
+	draw_text_transformed(140, 210, "eat cake.'", 2, 2, 0);
 }
 
 if(stage == 26){

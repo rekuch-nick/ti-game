@@ -3,6 +3,8 @@ depth = -4999;
 
 moveSpeed = 6;
 aniCD = 45;
+boxIn = false;
+boxInSize = 100;
 
 hp = 200;
 hpMax = 200;

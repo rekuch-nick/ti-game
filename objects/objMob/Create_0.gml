@@ -1,12 +1,16 @@
 
 
 moveSpeed = 6;
+speedSwap = false;
 
 sideBuffer = 40;
 
 thinkCD = 0;
 thinkCDMax = 60 * 3;
 moveType = "random";
+boxIn = false;
+boxInSize = 100;
+
 
 xs = 0; ys = 0;
 stillNew = true;
@@ -33,6 +37,8 @@ shotCluster = 0;
 shotClusterMax = 0;
 triShot = false;
 shotAngleChance = 0;
+randomAim = false;
+
 
 
 coinMin = 1;
