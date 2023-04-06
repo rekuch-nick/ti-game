@@ -30,3 +30,5 @@ shotCDCluster = 30;
 shotCluster = 1;
 shotClusterMax = 1;
 triShot = true;
+
+isFighter = false;

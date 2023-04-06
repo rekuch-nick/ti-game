@@ -12,3 +12,10 @@ for(var i=0; i<twin; i++){
 	var b = y;
 	draw_sprite_ext(sprite_index, image_index, a, b, image_xscale, image_yscale, image_angle, c_white, .5);
 }
+
+if(frags >= 3){
+	draw_set_halign(fa_center);
+	c = choose (c_white, c_lime, c_aqua, c_black);
+	draw_text_color(x, y, "Relic Time", c, c, c, c, 1);
+	draw_set_halign(fa_left);
+}

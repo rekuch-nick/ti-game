@@ -17,8 +17,8 @@ explodeSize = 2.2;
 kamikaze = false;
 fat = 50;
 
-hp = 200;
-hpMax = 200;
+hp = 300;
+hpMax = 300;
 
 
 coinMin = 15;
@@ -34,3 +34,5 @@ shotCluster = 3;
 shotClusterMax = 3;
 triShot = false;
 shotAngleChance = 70;
+necroBoss = true;
+isFighter = false;

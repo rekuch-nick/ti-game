@@ -3,7 +3,7 @@ function getRandomMob(){
 	var index = 0;
 	var list = [];
 	with(objMob){
-		if(sprite_index != imgFighter && sprite_index != imgFighter2){
+		if(isFighter){
 			list[index] = id;
 			index ++;
 		}

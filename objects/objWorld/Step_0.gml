@@ -7,7 +7,7 @@ if(instance_number(objMob) < mobCap && mIndex < array_length(mobs)){
 	if(spawnCD < 1){
 		spawnCD = spawnCDMax;
 		
-		//mobs[mIndex] = objMobPds;
+		//mobs[mIndex] = objMobFlagshipNecro;
 		instance_create_depth(irandom_range(200, room_width - 200), 0, ww.layerMob, mobs[mIndex]);
 		mIndex ++;
 	}

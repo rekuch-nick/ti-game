@@ -31,3 +31,5 @@ shotClusterMax = 1;
 coinMin = 10;
 coinMax = 10;
 coinZero = 0;
+
+isFighter = false;

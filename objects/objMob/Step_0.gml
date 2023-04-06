@@ -75,11 +75,13 @@ if(hp < 1){
 		effect_create_above(ef_explosion, other.x + irandom_range(-15, 15), other.y + irandom_range(-15, 15), random_range(.5, explodeSize), choose(c_orange, c_red, c_maroon));
 	}
 	
-	if(sprite_index == imgFighter || sprite_index == imgFighter2){
+	if(isFighter){
 		if(playerHasTech(getTech("Daxcive Animators").num)){ 
 			instance_create_depth(x, y, depth, objPlayerFighter);
 		}
 	}
+	
+	with(objPlayerStation){ m = noone; }
 	
 	instance_destroy();
 	return;
@@ -127,7 +129,9 @@ if(shotType != noone){
 
 
 
-
+if(necroBoss && instance_number(objMob) < 10){
+	instance_create_depth(irandom_range(300, room_width - 300), 50, ww.layerMob, objMobInfNecro);
+}
 
 
 

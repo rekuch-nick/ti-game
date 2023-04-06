@@ -29,3 +29,5 @@ shotCDMax = 60 * 5;
 shotCDCluster = 30;
 shotCluster = 1;
 shotClusterMax = 1;
+
+isFighter = false;

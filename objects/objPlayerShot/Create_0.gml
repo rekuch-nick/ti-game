@@ -18,3 +18,9 @@ hasHitFighter = false;
 
 hone = false;
 honeCD = 0;
+
+neuro = 0;
+
+firstFrame = true;
+xFlipCD = 0;
+xFlipCDMax = 10;

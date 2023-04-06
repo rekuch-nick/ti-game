@@ -68,8 +68,8 @@ function getTech(n){
 		return {
 			nam: "Neuroglaive",
 			col: ww.tGreen,
-			req: 3,
-			desc: "some attack idk, prolly on all new foes",
+			req: 2,
+			desc: "Shoot left and right",
 			num: 6
 		}
 	}
@@ -157,7 +157,7 @@ function getTech(n){
 			nam: "Sling Relay",
 			col: ww.tBlue,
 			req: 2,
-			desc: "Some attack, idk",
+			desc: "Shoot powerful extra shots about half the time",
 			num: 15
 		}
 	}
@@ -213,7 +213,7 @@ function getTech(n){
 			nam: "Graviton Laser System",
 			col: ww.tYellow,
 			req: 1,
-			desc: "Your shots arc through enemy Fighters into larger ships",
+			desc: "Shooting enemy Fighters creates extra shots",
 			num: 21
 		}
 	}

@@ -22,6 +22,10 @@ techYellow = 0;
 shotCD = 20;
 shotCDMax = 20;
 
+neuroTime = 60 * 10;
+neuroTimeMax = 60 * 10;
+lightwaveCD = 0;
+
 honeShotCD = 70;
 honeShotCDMax = 70;
 
@@ -32,7 +36,11 @@ fragTime = 0;
 mBoost = 0;
 sHolding = 0;
 dHit = 0;
+flankSpeed = 0;
+exBattleStation = 0;
+
 twin = 0;
+leftShotNext = true;
 
 gameOverTime = 0;
 

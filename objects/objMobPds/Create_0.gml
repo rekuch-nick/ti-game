@@ -36,3 +36,5 @@ shotClusterMax = 3;
 triShot = false;
 shotAngleChance = 70;
 randomAim = true;
+
+isFighter = false;

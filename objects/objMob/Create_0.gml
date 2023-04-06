@@ -39,7 +39,8 @@ triShot = false;
 shotAngleChance = 0;
 randomAim = false;
 
-
+isFighter = true;
+necroBoss = false;
 
 coinMin = 1;
 coinMax = 1;

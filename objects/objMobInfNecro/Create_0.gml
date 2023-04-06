@@ -1,11 +1,10 @@
 event_inherited();
 
 
-
-moveSpeed = 5;
+moveSpeed = 8;
 
 thinkCDMax = 60 * 1;
-moveType = "random at";
+moveType = "random";
 
 explodeNum = 5;
 explodeSize = 1.2;
@@ -17,8 +16,8 @@ hp = 10;
 hpMax = 10;
 
 
-coinMin = 1;
-coinMax = 2;
+coinMin = -1;
+coinMax = -1;
 coinZero = 0;
 
 isFighter = true;

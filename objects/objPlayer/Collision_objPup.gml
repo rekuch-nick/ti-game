@@ -1,4 +1,4 @@
-
+if(hp <= 0){ return; }
 
 
 if(other.sprite_index == imgTradegood){
@@ -15,17 +15,34 @@ if(other.sprite_index == imgTradegood){
 
 if(other.sprite_index == imgActionCard){
 	var r = irandom_range(1, 20);
+	
+	// r = 13; ////////
+	
 	var durMod = 1;
 	if(playerHasTech(getTech("Bio Stims").num)){ durMod = 2; }
 	var t = "Morale Boost";
-	if(r >= 6 && r <= 10){ 
+	if(r >= 1 && r <= 4){ 
 		t = "Direct Hit"; 
 		dHit += 60 * 30 * durMod;
 	}
-	if(r >= 11 && r <= 15){ 
+	if(r >= 5 && r <= 8){ 
 		t = "Shields Holding"; 
 		sHolding += 60 * 30 * durMod;
 	}
+	
+	if(r >= 9 && r <= 12){ 
+		t = "Flank Speed"; 
+		flankSpeed += 60 * 45 * durMod;
+	}
+	
+	if(r >= 13 && r <= 16){ 
+		t = "Experimental Battle Station"; 
+		exBattleStation += 60 * 30 * durMod;
+		if(instance_number(objPlayerStation) < 1){
+			instance_create_depth(x, y + 60, depth, objPlayerStation);
+		}
+	}
+	
 	
 	if(r == 20){ 
 		t = "Ghost Ship";

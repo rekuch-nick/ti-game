@@ -131,4 +131,26 @@ if(stage == 32){
 	draw_text_transformed(140, 210, "it to try and MAKE YOU LOSE!", 2, 2, 0);	
 }
 
+if(stage == 34){
+	draw_text_transformed(140, 10, "So by all means, accept it when offered", 2, 2, 0);
+	draw_text_transformed(140, 50, "If you walk the path of evil, even try", 2, 2, 0);
+	draw_text_transformed(140, 90, "to convince  the trade holder that it's a", 2, 2, 0);
+	draw_text_transformed(140, 130, "good idea- I won't stop you.", 2, 2, 0);
+	draw_text_transformed(140, 170, "But please, accept the TRUTH:", 2, 2, 0);
+}
+
+if(stage == 36){
+	draw_text_transformed(140, 10, "When you endorse a meta that takes", 2, 2, 0);
+	draw_text_transformed(140, 50, "the choice out of a core mechanic", 2, 2, 0);
+	draw_text_transformed(140, 90, "What you're really minusing is the FUN", 2, 2, 0);
+}
+
+if(stage == 37){
+	draw_text_transformed(140, 10, "BTW", 2, 2, 0);
+	draw_text_transformed(140, 50, "Mirage and DMZ should be OPTIONAL", 2, 2, 0);
+	draw_text_transformed(140, 90, "Make it happen, Codex 4", 2, 2, 0);
+	draw_text_transformed(140, 130, "Endless mode activated.", 2, 2, 0);
+	draw_text_transformed(140, 170, "Thanks for playing!", 2, 2, 0);
+}
+
 

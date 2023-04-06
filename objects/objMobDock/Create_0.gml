@@ -1,5 +1,5 @@
 event_inherited();
-image_xscale = 1.5;
+image_xscale = 2.5;
 image_yscale = 1.5;
 
 
@@ -15,8 +15,8 @@ explodeSize = 2;
 kamikaze = false;
 fat = 20;
 
-hp = 80;
-hpMax = 80;
+hp = 160;
+hpMax = 160;
 
 
 coinMin = 1;
@@ -24,11 +24,11 @@ coinMax = 2;
 coinZero = 0;
 
 
-shotType = objMob;
+shotType = objMobCruiser;
 shotCD = 60 * 3;
-shotCDMax = 60 * 10;
+shotCDMax = 60 * 15;
 shotCDCluster = 30;
-shotCluster = 3;
-shotClusterMax = 3;
+shotCluster = 0;
+shotClusterMax = 1;
 
 isFighter = false;

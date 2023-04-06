@@ -14,6 +14,11 @@ if(hone){
 var c1 = choose(c_white, c_aqua, c_blue);
 var c2 = choose(c_white, c_aqua, c_blue);
 
+if(neuro != 0){
+	c1 = choose(c_green, c_lime, c_blue);
+	c2 = choose(c_green, c_lime, c_blue);
+}
+
 var rad = 4;
 if(pc.dHit > 0){ rad = 6; }
 draw_circle_color(x, y, rad, c1, c2, false);

@@ -99,6 +99,16 @@ if(pc.dHit > 0){
 	draw_text(10, b+15, floor(pc.dHit / 60));
 	b += modd;
 }
+if(pc.flankSpeed > 0){
+	draw_text(0, b, "Flank Speed");
+	draw_text(10, b+15, floor(pc.flankSpeed / 60));
+	b += modd;
+}
+if(pc.exBattleStation > 0){
+	draw_text(0, b, "Experimental Battle Station");
+	draw_text(10, b+15, floor(pc.exBattleStation / 60));
+	b += modd;
+}
 
 
 
