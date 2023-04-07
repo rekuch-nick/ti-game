@@ -104,6 +104,11 @@ if(pc.flankSpeed > 0){
 	draw_text(10, b+15, floor(pc.flankSpeed / 60));
 	b += modd;
 }
+if(pc.silenceOfSpace > 0){
+	draw_text(0, b, "In the Silence of Space");
+	draw_text(10, b+15, floor(pc.silenceOfSpace / 60));
+	b += modd;
+}
 if(pc.exBattleStation > 0){
 	draw_text(0, b, "Experimental Battle Station");
 	draw_text(10, b+15, floor(pc.exBattleStation / 60));

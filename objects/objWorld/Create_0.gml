@@ -46,7 +46,7 @@ tYellow = 3;
 scrollSpeed = 2;
 
 
-
+stageText = getStageText(stage);
 
 
 

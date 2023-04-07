@@ -147,6 +147,7 @@ if(sHolding > 0){ sHolding --; }
 if(mBoost > 0){ mBoost --; }
 if(dHit > 0){ dHit --; }
 if(flankSpeed > 0){ flankSpeed --; }
+if(silenceOfSpace > 0){ silenceOfSpace --; }
 if(exBattleStation > 0){ 
 	exBattleStation --;
 	if(exBattleStation < 1){ with(objPlayerStation){ instance_destroy(); } }

@@ -5,8 +5,13 @@ if(firstFrame){
 	if(neuro != 0){
 		xs = neuro * 3;
 		ys += 3;
-		pow += 1;
+		pow = 2;
 	}
+	
+	if(instance_number(objMobFlagshipArgent) > 0){
+		range = 80;
+	}
+	
 	firstFrame = false;
 }
 

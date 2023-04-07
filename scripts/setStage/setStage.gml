@@ -53,6 +53,11 @@ function setStage(){
 	
 	
 	
+	if(ww.stage == 25){ ww.mobCap = 1; ww.rockRate = 0; ww.mobs = [objMobDestroyerIntro, objMobFlagshipArgent]; }
+	if(ww.stage == 31){ ww.mobCap = 1; ww.rockRate = 0; ww.mobs = [objMobCruiser2, objMobFlagshipHacan]; }
+	
+	
+	
 	
 	
 	

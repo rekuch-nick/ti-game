@@ -38,9 +38,11 @@ shotClusterMax = 0;
 triShot = false;
 shotAngleChance = 0;
 randomAim = false;
+sniper = false;
 
 isFighter = true;
 necroBoss = false;
+argentBoss = false;
 
 coinMin = 1;
 coinMax = 1;

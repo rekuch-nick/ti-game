@@ -111,6 +111,12 @@ if(shotType != noone){
 			s.ys = choose(s.ys, -s.ys);
 		}
 		
+		if(sniper){
+			var angle = arctan2(pc.y - s.y, pc.x - s.x);
+			s.xs = cos(angle) * 6;
+			s.ys = sin(angle) * 6;
+		}
+		
 		if(triShot){
 			var s = instance_create_depth(x, y, ww.layerEffect, shotType);
 			s.xs -= 2;

@@ -38,6 +38,7 @@ sHolding = 0;
 dHit = 0;
 flankSpeed = 0;
 exBattleStation = 0;
+silenceOfSpace = 0;
 
 twin = 0;
 leftShotNext = true;

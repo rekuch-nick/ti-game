@@ -1,6 +1,12 @@
+draw_text_ext_transformed(140, 10, stageText, 22, 400, 2, 2, 0);
+return;
+
 if(stage == 1){
 	draw_text_transformed(140, 10, "Your ship will follow the mouse", 2, 2, 0);
 	draw_text_transformed(140, 50, "and auto-fire", 2, 2, 0);
+	
+	var s = "what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? what if i use spaces though? ";
+	draw_text_ext_transformed(200, 100, s, 22, 500, 2, 2, 0);
 }
 
 if(stage == 3){

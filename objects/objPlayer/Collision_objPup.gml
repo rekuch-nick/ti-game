@@ -7,7 +7,7 @@ if(other.sprite_index == imgTradegood){
 	
 	if(coins >= coinsMax){
 		pc.coins = 0;
-		pc.coinsMax += 7;
+		pc.coinsMax += 10;
 		instance_create_depth(0, 0, ww.layerScreen, objScreenTech);
 	}
 }
@@ -21,30 +21,34 @@ if(other.sprite_index == imgActionCard){
 	var durMod = 1;
 	if(playerHasTech(getTech("Bio Stims").num)){ durMod = 2; }
 	var t = "Morale Boost";
-	if(r >= 1 && r <= 4){ 
+	if(r >= 1 && r <= 3){ 
 		t = "Direct Hit"; 
 		dHit += 60 * 30 * durMod;
 	}
-	if(r >= 5 && r <= 8){ 
+	if(r >= 4 && r <= 6){ 
 		t = "Shields Holding"; 
 		sHolding += 60 * 30 * durMod;
 	}
 	
-	if(r >= 9 && r <= 12){ 
+	if(r >= 7 && r <= 9){ 
 		t = "Flank Speed"; 
 		flankSpeed += 60 * 45 * durMod;
 	}
 	
-	if(r >= 13 && r <= 16){ 
+	if(r >= 10 && r <= 12){ 
 		t = "Experimental Battle Station"; 
 		exBattleStation += 60 * 30 * durMod;
 		if(instance_number(objPlayerStation) < 1){
 			instance_create_depth(x, y + 60, depth, objPlayerStation);
 		}
 	}
+	if(r >= 13 && r <= 15){ 
+		t = "In the Silence of Space"; 
+		silenceOfSpace += 60 * 15 * durMod;
+	}
 	
 	
-	if(r == 20){ 
+	if(r >= 19){ 
 		t = "Ghost Ship";
 		pc.twin += 1;
 	}

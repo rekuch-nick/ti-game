@@ -1,5 +1,7 @@
 if(instance_number(objScreen) > 0){ return; }
-
+if(instance_number(objMobFlagshipHacan) > 0 && irandom_range(1, 300) == 1){
+	instance_create_depth(irandom_range(200, 900), 0, ww.layerMob + 100, objPup);
+}
 
 
 if(instance_number(objMob) < mobCap && mIndex < array_length(mobs)){
@@ -7,7 +9,7 @@ if(instance_number(objMob) < mobCap && mIndex < array_length(mobs)){
 	if(spawnCD < 1){
 		spawnCD = spawnCDMax;
 		
-		//mobs[mIndex] = objMobFlagshipNecro;
+		//mobs[mIndex] = objMobFlagshipHacan;
 		instance_create_depth(irandom_range(200, room_width - 200), 0, ww.layerMob, mobs[mIndex]);
 		mIndex ++;
 	}
@@ -54,7 +56,7 @@ if(instance_number(objMob) == 0 && mIndex >= array_length(mobs) ){
 	do { scrollSpeed = irandom_range(1, 10); } until ( abs(scrollSpeed - oldSS) >= 2);
 	spawnCD = 30;
 	stage ++;
-	
+	stageText = getStageText(stage);
 	
 	if(playerHasTech(getTech("Integrated Economy").num)){ pc.twin ++; }
 	
